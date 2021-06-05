@@ -8,37 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/Appium/commons-lang3-3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/Appium/java-client-7.4.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/selenium-java-3.141.59" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/selenium-java-3.141.59" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/selenium-java-3.141.59" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../../2020/SIPECOM/BBOTestNov2020/herramientas/selenium-java-3.141.59" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="JUnit4">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
@@ -51,11 +20,32 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../selenium-java-3.141.59/libs" />
+          <root url="file://$MODULE_DIR$/../../herramientas/selenium-java-3.141.59/libs" />
+          <root url="jar://$MODULE_DIR$/../../herramientas/selenium-java-3.141.59/client-combined-3.141.59.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../herramientas/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../herramientas/selenium-java-3.141.59/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../appiumlibs/commons-lang3-3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../selenium-java-3.141.59/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../appiumlibs/java-client-7.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>

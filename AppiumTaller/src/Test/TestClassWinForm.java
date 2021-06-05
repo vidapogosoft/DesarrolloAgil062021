@@ -21,7 +21,7 @@ public class TestClassWinForm {
             DesiredCapabilities capabilities = new DesiredCapabilities();
 
             capabilities.setCapability("app",
-                    "E://Cursos//2020//SIPECOM//BBOTestNov2020//herramientas//Appium//AppWinForm1.exe");
+                    "E:\\Cursos\\2021\\SINERGIASS\\TestingBA\\AppWinForm1.exe");
 
             NewSessionExe = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
 

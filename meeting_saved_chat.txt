@@ -1,0 +1,47 @@
+17:46:06	 De  sinergiass cursos : http://automationpractice.com/index.php
+17:47:19	 De  sinergiass cursos :  private By searchBtnLocator = By.name("submit_search");    private By resultTextLocator = By.cssSelector("span.heading-counter");
+18:12:45	 De  sinergiass cursos : Examples:     |dato|    |blouse|    |shoes|    |hat|
+18:15:11	 De  sinergiass cursos : Feature: Funcionalidad de busqueda de productos outline  Scenario Outline: Busqueda en search tool    Given Abre el web browser Chrome y direcciona a la aplicacion    When Ingreso el nombre del producto a buscar "<dato>"    Then Visualizo resultado de la busqueda    And Cierro el Browser    Examples:    |dato|    |blouse|    |shoes|    |hat|
+18:18:16	 De  Andres Alvarado : java.lang.ExceptionInInitializerError	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+18:23:22	 De  sinergiass cursos : @When("Ingreso el nombre del producto a buscar  \"([^\"]*)\"$")
+18:43:34	 De  sinergiass cursos : import org.junit.runner.RunWith;import cucumber.api.junit.Cucumber;import cucumber.api.CucumberOptions;@RunWith(Cucumber.class)@CucumberOptions(features = "FeatureDataTable", glue = { "StepDefinitionDataTable" })public class RunnerDataTable {}
+18:51:36	 De  sinergiass cursos : @When("Ingreso el nombre del producto a buscar:$")    public void nombre_del_producto_buscar_table(DataTable tabla) throws  Throwable    {        List<List<String>> rows = tabla.asLists(String.class);        List<List<String>> rowsWithHead = rows.subList(1, rows.size());        for (List<String> row : rowsWithHead)        {            driver.findElement(searchBoxLocator).clear();                        driver.findElement(searchBoxLocator).sendKeys(row.get(0));            driver.findElement(searchBtnLocator).click();        }    }
+18:59:50	 De  sinergiass cursos : https://github.com/microsoft/WinAppDriver
+19:02:54	 De  sinergiass cursos : https://github.com/Microsoft/WinAppDriver/releases
+19:38:21	 De  Maricela Arreaga Pazmiño : buenas noches, la sesión 3 ya se encuentra completamente disponible... cualquier novedad me comunican
+19:54:48	 De  sinergiass cursos : https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk/
+19:57:10	 De  sinergiass cursos : https://github.com/vidapogosoft/DesarrolloAgil062021.git
+20:01:42	 De  sinergiass cursos : https://www.selenium.dev/downloads/
+20:38:22	 De  Jorge Leon : java: warning: source release 11 requires target release 11
+21:02:59	 De  Jorge Solis : Yo .Net
+21:03:10	 De  Paul Ochoa : Yo
+21:03:10	 De  Verónica Mendoza : ambos
+21:03:17	 De  César Carpio : Yo
+21:03:18	 De  Jorge Carrion : .NET rules
+21:03:21	 De  David Chicaiza Pantalla : David Chicaiza .Net
+21:04:49	 De  Jenifer Marquez : .net
+21:04:51	 De  Johanna Dominguez : .net
+21:05:08	 De  Andres Jadan : .net
+21:07:43	 De  Micaela Mera  a  sinergiass cursos(En privado) : ya, dele porto ya le pase los print a maricela
+21:08:03	 De  Micaela Mera  a  sinergiass cursos(En privado) : feedback
+21:08:05	 De  sinergiass cursos  a  Micaela Mera(En privado) : entonces .. salimos...
+21:08:06	 De  Micaela Mera  a  sinergiass cursos(En privado) : porto
+21:08:06	 De  sinergiass cursos  a  Micaela Mera(En privado) : ??
+21:08:15	 De  Micaela Mera  a  sinergiass cursos(En privado) : como salimos hoy de la sesión
+21:08:18	 De  Micaela Mera  a  sinergiass cursos(En privado) : que les ha parecido
+21:08:20	 De  Micaela Mera  a  sinergiass cursos(En privado) : y con eso cerramos
+21:09:28	 De  Paul Ochoa : 5
+21:09:30	 De  Andres Urgiles : 5: excelente
+21:09:30	 De  David Chicaiza Pantalla : 5
+21:09:32	 De  Jorge Carrion : 5
+21:09:33	 De  Rene Palta : 5
+21:09:34	 De  César Carpio : 5
+21:09:36	 De  Diego Lima : 5
+21:09:41	 De  Verónica Mendoza : 5
+21:09:41	 De  adrianapinos : 5
+21:09:43	 De  Jorge Leon : 5
+21:09:45	 De  Jorge Solis : 5
+21:09:50	 De  Yanetsi Mestre : 5
+21:09:58	 De  Ximena Guamán : 5
+21:10:07	 De  Dario Gomez : 5
+21:10:26	 De  Ernesto L. NoCám : 5
