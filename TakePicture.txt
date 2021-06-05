@@ -1,0 +1,10 @@
+ File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+            FileOutputStream fileOut = new FileOutputStream("E://Cursos//" + System.currentTimeMillis()
+            +".png");
+
+            BufferedOutputStream bf = new BufferedOutputStream(fileOut);
+
+            bf.write(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
+
+            bf.close();
