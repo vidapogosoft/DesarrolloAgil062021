@@ -20,7 +20,7 @@ public class TestClassMobile1 {
         try {
 
             // la ruta de mi app a testear
-            File app = new File("//AppiumMobile//"
+            File app = new File("E://Cursos//2021//SINERGIASS//TestingBA//"
                     ,"ContactManager.apk");
 
 
