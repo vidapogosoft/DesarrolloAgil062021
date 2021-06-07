@@ -11,7 +11,9 @@ namespace NetTestSelenium1
     [TestClass]
     public class UnitTest1
     {
-        public ChromeDriver driver = new ChromeDriver();
+        //public ChromeDriver driver = new ChromeDriver();
+
+        public IWebDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
 
         //defino el url del test
         public string url = "https://demoqa.com/automation-practice-form";
@@ -45,17 +47,14 @@ namespace NetTestSelenium1
 
                 //Click al boton
 
-                //  //*[@id="submit"]
-
-                // #submit
 
                 //driver.FindElement(By.Id("submit")).Click();
 
-                //driver.FindElement(By.XPath("'//*[@id="'submit'"]'")).Click();
-
+       
                 driver.FindElement(By.CssSelector("#submit")).Click();
 
 
+                //driver.Close();
 
             }
             catch (Exception ex)
@@ -69,32 +68,14 @@ namespace NetTestSelenium1
                     + ex.Message + ".png");
 
 
-                driver.Quit();
+                driver.Close();
 
             }
 
             
         }
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-
-            ITakesScreenshot ScreenShotDrive = driver as ITakesScreenshot;
-
-            Screenshot screenshot = ScreenShotDrive.GetScreenshot();
-
-            screenshot.SaveAsFile("C:/vidapogosoft/Cursos/2021/SINERGIASS/TestingBA/"
-                + DateTime.Now.Ticks.ToString() + ".png");
-
-
-        }
-
-        [TestMethod]
-        public void TestMethod3()
-        {
-            driver.Quit();
-        }
+       
 
     }
 }

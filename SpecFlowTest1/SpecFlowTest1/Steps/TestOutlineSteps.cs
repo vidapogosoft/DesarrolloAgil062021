@@ -12,10 +12,13 @@ namespace SpecFlowTest1.Steps
     public class TestOutlineSteps
     {
 
-        
+
         //public ChromeDriver driver = new ChromeDriver(@"C:\Users\HP\source\repos\SpecFlowTest1\SpecFlowTest1\bin\Debug\netcoreapp3.1\");
 
-        public ChromeDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
+        //public ChromeDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
+
+        public IWebDriver driver = new ChromeDriver();
+
         public string URlLoginExitoso = "https://demoqa.com/profile";
         public string URlLoginValidar = "";
 

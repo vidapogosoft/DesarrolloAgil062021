@@ -14,7 +14,9 @@ namespace SpecFlowTest1.Steps
     public class TestSimpleSteps
     {
 
-        public ChromeDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
+        //public ChromeDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
+
+        public IWebDriver driver = new ChromeDriver(@"C:\vidapogosoft\Cursos\2021\SINERGIASS\TestingBA\");
 
         public string UrlLoginExitoso = "https://demoqa.com/profile";
         public string URlLoginValidar = "";
@@ -71,7 +73,7 @@ namespace SpecFlowTest1.Steps
 
             Thread.Sleep(5000);
 
-            driver.Quit();
+            driver.Close();
 
         }
     }
