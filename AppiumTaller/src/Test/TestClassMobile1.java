@@ -2,6 +2,7 @@ package Test;
 
 import org.junit.*;
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 

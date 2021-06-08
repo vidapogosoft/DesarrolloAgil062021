@@ -26,8 +26,10 @@ namespace NetAppiumMobile1
             cap.SetCapability("app", "E://Cursos//2021//testing//ContactManager.apk");
             cap.SetCapability("device", "RQ300729UE");
             cap.SetCapability("deviceName", "G3223");
-            cap.SetCapability("app-package", "com.example.android.contactmanager-1");
             cap.SetCapability("platformName", "Android");
+
+            cap.SetCapability("app-package", "com.example.android.contactmanager-1");
+            
 
 
             ///launch del android driver
